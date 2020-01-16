@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+            <title>Formulários</title> <!--o title será o que o o google traz nas buscas-->
+            <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Formulários (tag "form").</h1>
+        <p>Formulários são utilizados para envio de dados ao servidor. Podem ser formulários de contato, de busca, de chat e etc.</p>
+
+        <H3>Exemplo:</H3>
+       <form action="enviar.php" method="post"> 
+                        <!--action dependerá de linguagem de programação JS ou PHP, como exemplos o arquivo enviar.php com código lógico-->
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required><br>
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="text" required><br>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" type="text" required></textarea><br>
+
+            <button id="enviar" name="enviar" type="submit">Solicitar orçamento</button>
+       </form>
+    <hr>
+       <h2>Atributos:</h2>
+        <h3><u>Form atributos</u></h3>
+        <ul>
+            <li><b>action</b> = Define a ação do formulário</li>
+            <li><b>method</b> =especifica se é get o post</li>
+                <ul>
+                    <li>Post = enviar os dados para o servidor</li>
+                    <li>Get = captar o dado do servidor(exemplo: uma busca = google.)</li>
+                </ul>
+            <li><b>name</b> = Nome único do elemento. (é o nome que se dá ao dado para facilitar a identificação pelo servidor ou pelo navegador. Esses nomes são importantes em ambos os lados; no lado do navegador, ele informa ao navegador que nome dar a cada pedaço de dados, e no lado do servidor, ele permite que o servidor lidar com cada pedaço de dados pelo nome. Então, para nomear seus dados, você precisará usar o atributo name em cada campo do formulário que irá recolher uma parte específica dos dados:</li>
+        </ul>
+
+        <h3><u>Input atributos</u></h3>
+        <ul>
+                <li><b>type</b> = define o tipo de input, pode ser box, passwort, text, button e outros</li>
+                <li><b>required</b> =especifica se é obrigatório ou não o campo.</li>
+                <li><b>name</b> = nome único do elemento</li>
+                <li><b>id</b> = ID único referencia o Label.</li>
+        </ul>
+        <h3><u>Button atributos</u></h3>
+                <ul>
+                    <li><b>type</b> = define o tipo de botãp, pode ser reset, submit</li>
+                    <li><b>name</b> = nome único do elemento</li>
+                </ul>
+<hr>
+
+        <H1>Bikcraft - Bicicletas Personalizadas.</H1>
+        <form action="enviar.php" method="post" name="form">
+            <div>   
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text">
+            </div>
+            <br>
+            <div>   
+                <label for="password">Senha</label>
+                <input id="password" name="password" type="password">
+            </div>
+            <br>
+            <div>
+                <label for="mail">E-mail</label>
+                <input id="mail" name="mail" type="text">
+            </div>
+            <br>
+            <div>
+                <p>Escolha a bicicleta:</p>
+                <label for="retro"><input id="retro" type="checkbox" value="retro">Retro</label>
+                <label for="passeio"><input id="passeio" type="checkbox" value="passeio">Passeio</label>
+                <label for="esporte"><input id="esporte" type="checkbox" value="esporte">Esporte</label>
+            </div>
+            <br>
+            <div>
+                <label for="mensage">Mensagem</label>
+                <textarea id="mensage" name="mensage" type="text"></textarea>
+            </div>
+            <br>
+            <button type="submit">Enviar</button><br><br>
+            <br>                      <!-- não se pode utlizar o mesmo nome de traibuto para outras tags: exemplo: uma vez utilizado "name", na outra tag não se pode utilizá=lo. -->
+            <select name="choice">
+                <option value="first">First Value</option>
+                <option value="second" selected>Second Value</option>
+                <option value="third">Third Value</option>
+            </select>
+       </form>
+    </body>
+</html>
