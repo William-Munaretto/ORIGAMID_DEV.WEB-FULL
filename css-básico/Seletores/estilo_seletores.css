@@ -1,0 +1,31 @@
+*{
+    text-transform: uppercase;
+    color: orange;
+}
+/* ELEMENTO */
+p{
+    color: #222222;
+    font-size: 16px;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    margin-bottom:20px; 
+    background: #bbb;
+    padding: 20px;
+}
+
+/* ELEMENTO ELEMENTO */
+
+/* div a{
+    color: green;
+    font-size: 16px;
+} */
+
+
+/* ELEMENTO, ELEMENTO (multiplus elementos, dentro de um elemento */
+
+div p, div a{
+    color: red;
+}
