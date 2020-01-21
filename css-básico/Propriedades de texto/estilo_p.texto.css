@@ -1,0 +1,63 @@
+/* COLOR */
+.color{
+    color: #66d9ff;
+    /* color: rgba(255, 255, 255, 0.5); */
+}
+
+/********************************************************************************************* */
+ /* FONT-STYLE e FONT-WEIGHT */
+
+.fontStyle{
+    font-style: italic;
+}
+
+.fontWeight{
+    font-weight: bold;
+}
+
+.fontFamily{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+div{
+    background: #eeeeee;
+    line-height: 25px;;
+}
+=
+.font{
+    color: #771177;
+    font: italic bold 14px/25px Helvetica, "Times new roman";
+}
+
+/********************************************************************************************* */
+/* TEXT */
+.text{
+    text-align: center; /*righ and/or left*/
+    text-transform: lowercase; /*ou Uppercase*/
+    text-indent: 30px; /*indenta o parágrafo, margem de inicio. px ou em.*/
+    text-shadow: 2px 2px 5px green;/*prinemrio horizontal, segundo o vertical, depois o blur (espalhamento da sombra), e por último a cor.(o padrão de valores é "0")*/
+}
+
+.text, a{
+    text-decoration: none;/*underline - sublinhado, Overline - linha acima, line-through - riscado/cortado. /*normalmente usa=-se em tag "a" para tirar o sublinhado. Exemplos: */
+    
+}
+
+/********************************************************************************************* */
+/* SPACE */
+
+.space{
+    white-space: nowrap; /*define se o texto quebra ou não*/
+    word-spacing: 1px; /*define espaçamento entre palavras. Pode ser em "px" ou "em".*/
+    letter-spacing: 1px; /*define o traking - espaçamento entre letras. Pode ser em "px" ou "em".*/
+}
+/********************************************************************************************* */
+/* LIST */
+
+ul{
+    list-style-type:upper-roman;
+    list-style-position: outside;
+    list-style-image: url("img/color.jpg");
+    list-style: none; /*nenhum estilo de lista, é o mais utilizado*/
+   
+}

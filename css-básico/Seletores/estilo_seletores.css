@@ -1,5 +1,5 @@
 *{
-    text-transform: uppercase;
+ 
     color: orange;
 }
 /* ELEMENTO */
@@ -28,4 +28,43 @@ div{
 
 div p, div a{
     color: red;
+}
+
+
+/* CLASSE */
+
+.btn-comprar{
+    color: green;
+}
+/* ou */
+
+a.btn-comprar{
+    color: black;
+} /*este é prioritário*/
+
+/* ID */
+
+#principal{
+    width: 100px;;
+}
+
+/* Uma mesma "class" pode ser utlizada diversas vezes em elementos distintos, desde que necessitem de mesma formação. Contudo , os "id`s" só podem ser utilizados uma única vez. Caso seja necessário a utlização de outro id, deverá ser refenciado por outro nome.*/
+
+/* PSEUDO-CLASS */
+
+a{
+    width: 100px;
+    height: 20px;
+   
+    color: white;
+}
+
+a:hover{
+    font-size: 18px;
+    color: red;
+}
+
+a:visited{
+    color:black;
+    font-size: 20px;
 }
