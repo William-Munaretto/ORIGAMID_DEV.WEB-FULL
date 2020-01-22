@@ -1,0 +1,13 @@
+body{   
+    background-position: center;
+    background: url("img/bikcraft-esporte.jpg");
+    background-size: 1600px 780px; /*mais utlizado é o COVER*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 5000px;
+    /* box-shadow: inset 0 0 10px #000000; dentro da imagem */
+}
+
+H3{
+    color: white;;
+}
